@@ -1,0 +1,32 @@
+body{
+  background: rgb(70,142,236);
+  color: #fff;
+  font-size: 14pt;
+
+  text-align: center;
+}
+
+header {}
+
+
+section {
+  color: #484848;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 400px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+#imagem {
+  margin-top: 10px;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+footer {
+  font-style: italic;
+  font-size: 12pt;
+}
