@@ -1,6 +1,7 @@
 ##  Variáveis ​​e declarações
 
-Ponto e vírgula são usados para finalizar uma declaração. você pode optar por não escrevê-los _(porque existe ASI: Inserção Automática de Ponto e Vírgula em Javascript)_.
+Ponto e vírgula são usados para finalizar uma declaração. 
+Você pode optar por não escrevê-los _(porque existe ASI: Inserção Automática de Ponto e Vírgula em Javascript)_.
 
 ### Declarando variaveis:
 
