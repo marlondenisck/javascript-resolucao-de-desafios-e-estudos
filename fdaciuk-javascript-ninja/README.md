@@ -91,3 +91,6 @@ Aqui você pode ver todo o conteúdo do curso disponível:
 - Testes (TDD, BDD)
 - Ferramentas para escrever testes
 - Aula bônus
+
+## Resultados dos desafios
+- Olhar a branch **desafios-resolvidos**
