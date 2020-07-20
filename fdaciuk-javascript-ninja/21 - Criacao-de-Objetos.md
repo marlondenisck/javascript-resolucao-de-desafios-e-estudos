@@ -98,3 +98,43 @@ O método Object.create() cria um novo objeto, utilizando um outro objecto exist
 ```javascript
   Object.create(proto[, propertiesObject])
 ```
+
+### Object.prototype
+A propriedade `Object.prototype` representa o `new Object` protótipo do objeto. [Leia Mais](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype).
+
+Cada objeto quando criado `herda` do seu proprio prototipo, neste caso `{ }`.
+
+```javascript
+  var obj = {
+    prop1: 'valor 1',
+    prop2: 'valor 2'
+  }
+  
+  Object.prototype
+  {}
+  
+```
+---
+
+### Herança
+Criar dois objetos o primeiro de forma literal e o segundo Herdando as props do primeiro.
+```javascript
+  var objLiteral = {
+     x: 'valor 1',
+     y: 'valor 2'
+  }
+  
+  var objHerdado = Object.create(objLiteral);
+```
+Se chamar o `objHerdado` veja que não existe valores a mostrar, mas ele herdou as props do `objLiteral` da seguinte forma:
+```javascript
+    objHerdado;
+    {}
+    
+    objHerdado.x;
+    'valor 1'
+    objHerdado.y;
+    'valor 2'
+    
+```
+- Nota: Se alterar o value no objeto pai(`objLiteral`) essa value será refletido no objeto filho(`objHerdado`). **Mas do contrário não surtirá efeito,** ou seja, se alterar o filho não sera refletido no pai.
