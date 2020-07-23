@@ -204,3 +204,70 @@ O método `splice()` altera o conteúdo de um array, adicionando e removendo ele
 ```
 
 ---
+
+## forEach
+O método `forEach()` executa uma dada função em cada elemento de um array.
+
+#### Sintaxe
+```javascript
+  // a function anonima aqui pode ser chamada de callback e recebe 3 parametros 'o index e array são opcionais'
+  arr.forEach(function( item, index, array ) {
+    console.log(item, index, array);
+  });
+  
+```
+- Da pra fazer a mesma coisa usando o laço `for`.
+```javascript
+  for( var index = 0; index < array.length; index ++ ) {
+    console.log( array[index], index, array );
+  }
+  
+```
+
+ #### Exemplo
+ ```javascript
+  var array = [1, 2, 3, 4];
+  var soma = 0;
+  
+  // Vamos somar os itens do array
+  array.forEach(function( item ) {
+      soma += item;
+  });
+  
+  console.log(soma);
+  10
+```
+
+---
+
+
+## every
+O método `every()` testa se todos os elementos do array passam pelo teste implementado pela função fornecida.
+
+#### Exemplo
+ ```javascript
+  var array = [1, 2, 3, 4];
+  
+  var teste = array.every(function( item ) {
+      console.log(item);
+      return item < 3;
+  });
+  
+  console.log(teste);
+  1
+  2
+  3
+  false
+```
+- Ele percorre o array e faz a condição neste exemplo eu pedi pra mostrar o item primeiro, e fazer a condição depois. 
+
+O item é menor que 3? e ficara assim até a condição for satisfeita.
+
+
+---
+
+
+## some
+O método `some()` testa se ao menos um dos elementos no array passa no teste implementado pela função atribuída e retorna um valor true ou false, ou seja, idendico ao every mas ele retorna imediatamente apos ter um  true.
+
+
