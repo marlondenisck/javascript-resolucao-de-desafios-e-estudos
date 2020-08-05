@@ -70,3 +70,22 @@ Ou seja, se ele é herdado ou não. (vimos herança no arquivo anterior).
     { prop1: 1, prop2: 'string', prop3: true }
 ```
 
+---
+
+## delete
+Operador `delete` remove propriedades de um objeto.
+
+#### Exemplo
+ ```javascript
+  var obj = {
+    name: 'Marlon',
+    age: '28'
+  };
+  
+  console.log(obj);
+  // { name: 'Marlon', age: '28' }
+  
+  delete obj.age;
+  console.log(obj);
+  // { name: 'Marlon' }
+```
