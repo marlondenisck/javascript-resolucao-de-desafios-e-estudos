@@ -43,3 +43,37 @@ const regex = /m/gi;
 - `[]` classe  de caracteres (listas)
 
 - `()` agrupamento de caracteres
+
+- `\s` espaços em branco
+
+- `\n` quebra linha
+
+- `\t` tabulação (tab)
+
+- `.` representa qualquer caractere (exceto quebra de linha)
+
+
+### Negação
+
+- `[^abc]` O match deve ser feito com qualquer item, exceto com os da lista
+
+- `\W` Qualquer caractere, execeto os alfanumericos
+
+- `\D` Qualquer caractere, execeto os numeros
+
+- `\S` Qualquer caractere, execeto espaços em branco
+
+
+### Repetidores
+
+- `{n, x}` **intervalo**: item anterior por `n` vezes, e no maximo `x` vezes
+
+- `{n, }` **intervalo aberto**: item anterior `n` ou mais vezes
+
+- `{n}` exatamente `n` vezes
+
+- `?` **opcionial** zero ou uma ocorrência do item anterior
+
+- `+` uma ou mais ocorrencias do item anterior
+
+- `*` zero ou mais ocorrencias do item anterior
