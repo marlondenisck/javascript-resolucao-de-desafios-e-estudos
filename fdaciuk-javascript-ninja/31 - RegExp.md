@@ -29,6 +29,10 @@ A flag global ira buscar match em toda a string
 
 A flag ignore case ira descartar case sentive da string
 
+- `m` 
+A flag multiline tentara dar match em linhas
+
+
 ```javscript
 const regex = /m/gi;
 ```
@@ -51,6 +55,11 @@ const regex = /m/gi;
 - `\t` tabulação (tab)
 
 - `.` representa qualquer caractere (exceto quebra de linha)
+
+- `^` inicio de uma string (fora de uma lista)
+
+- `$` fim de string
+
 
 
 ### Negação
@@ -77,3 +86,24 @@ const regex = /m/gi;
 - `+` uma ou mais ocorrencias do item anterior
 
 - `*` zero ou mais ocorrencias do item anterior
+
+
+### Metodos
+- O método `match()` recupera as correspondências ao testar uma string com uma expressão regular.
+
+- O método `replace()` retorna uma nova string com algum ou todas as combinações do padrão substituído por um substituto. 
+
+- O método `split()` divide um objeto String em um array de strings ao separar a string em substrings.
+
+- O método `search()` executa uma busca de uma expressão regular neste objeto  String.
+
+
+### Construtor RegExp()
+O construtor RegExp cria um objeto de expressão regular para combinar o texto com um padrão.
+
+```javascript
+  var regex = new RegExp('string');
+  
+  console.log(regex);
+  //saida sera uma regex ->  /string/
+```
