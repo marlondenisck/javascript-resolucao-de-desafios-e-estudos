@@ -116,8 +116,16 @@
         var cep = clearCep();
         return message.replace('[CEP]', cep)
       }
+
+      return {
+        // ...
+        clearData: clearData,
+        parseData: parseData,
+        getMessages: getMessages,
+        replaceMessageCep: replaceMessageCep
+      }
     }
-    
+    window.app = app;
     app();
 
   })(window.DOM);
