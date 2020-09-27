@@ -20,9 +20,11 @@ router.post('/', function(req, res) {
 });
 
 router.delete('/', function(req, res) {
-  data = data.filter(function(car) {
-    return car.plate !== req.body.plate;
+  var carIndex = data.filter(function(car) {
+    return car.plate == req.body.plate;
   });
+  // fazemos o recorte do array de objetos usando o id encontrado
+  data.splice(carIndex, 1);
   res.json({ message: 'success' });
 });
 
