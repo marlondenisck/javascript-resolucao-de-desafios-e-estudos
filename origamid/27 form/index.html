@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  form {
+    max-width: 400px;
+  }
+  label{
+    display: block;
+    font-weight: bold;
+    margin: 1rem 0 .2rem
+  }
+  input, textarea, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border: 1px solid #000
+  }
+  textarea {
+    height: 80px;
+  }
+  
+</style>
+<body>
+    
+  <form name="contato">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email">
+    <label for="mensagem">Mensagem</label>
+    <textarea name="mensagem" id="mensagem"></textarea>
+    <label for="cores">Cores</label>
+    <select name="cores" id="cores">
+      <option value="white"></option>
+      <option value="blue">Azul</option>
+      <option value="red">vermelho</option>
+    </select>
+  </form>
+
+  <script src="./script.js"></script>
+</body>
+</html>
