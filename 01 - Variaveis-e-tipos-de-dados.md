@@ -1,12 +1,13 @@
 ## O que é variável? 
 - `Adjetivo`: Que pode variar; que se altera, muda; mutável: personalidade variável.
 
-Em javascript declaramos variáveis com a palavra reservada da linguagem chamada **var**.
-As instruções terminam com ponto e virgula, mas é `opcional`, por que existe `ASI` (Automatic Semicolon Insercion, mais a frente falarei de lint do código).
+Em javascript declaramos variáveis com a palavra reservada da linguagem chamada **let** e também a **const**. Obs: No javascript antigo usa-se **var**.
+
+As instruções terminam com ponto e virgula, mas é `opcional`, por que existe `ASI` (Automatic Semicolon Insercion).
 
 ### Declarando uma variável
 ```javascript
-    var meuNome = 'Marlon Authority';
+    let meuNome = 'Marlon';
 ```
 ## Identificadores
 Todas as variáveis devem ser identificadas com nomes exclusivos que são chamados de identificadores.
@@ -25,4 +26,4 @@ O mais comuns de tipos primitivo são:
   - `null` - Uma palavra-chave que indica valor nulo. Devido JavaScript ser case-sensitive, null não é o mesmo que Null, NULL, ou ainda outra variação.
   - `undefined` - Uma propriedade superior cujo valor é indefinido (Quando declarar uma variável sem valor, o javascript atruibuirá undefined a ela).
   - `Number` - 1, 2, 3, -10, 4,2.
-  - `String` - "Marlon Authority".
+  - `String` - "Marlon".
