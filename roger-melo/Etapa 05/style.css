@@ -22,3 +22,13 @@ li {
   background: #eee;
   border: 1px dotted #ddd;
 }
+
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  background: #eee;
+  text-align: center;
+  padding: 20px;
+}
