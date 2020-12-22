@@ -22,3 +22,11 @@ input, button {
   margin: 10px auto;
   padding: 4px;
 }
+
+.success {
+  border: solid 2px rgb(0, 230, 0)
+}
+
+.error {
+  border: solid 2px rgb(230, 0, 0)
+}
