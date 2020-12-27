@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Quiz Interativo</title>
+</head>
+<body>
+  <div class="intro py-3 bg-danger text-center">
+    <div class="container">
+      <h2 class="text-light display-3 my-4">Quiz de Informática</h2>
+    </div>
+  </div>
+
+  <div class="quiz py-4 bg-dark">
+    <div class="container">
+
+      <form class="quiz-form text-light">
+        <div class="my-5">
+          <p class="lead font-weight-normal">1. Referente aos components qual é o responsável pelo armazenamento?</p>
+          <div class="form-check my-2 text-secondary">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="A" checked>
+              Processador
+            </label>
+          </div>
+          <div class="form-check my-2 text-secondary">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="B">
+              Fonte
+            </label>
+          </div>
+          <div class="form-check my-2 text-secondary">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="C">
+              Hard disk
+            </label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">2. Qual é o responsável por manter varios apps abertos?</p>
+          <div class="form-check my-2 text-secondary">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="A" checked>
+              Memórias
+            </label>
+          </div>
+          <div class="form-check my-2 text-secondary">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="B">
+              GPU
+            </label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">3. Para abrir apps que demandem processamento visual é necessário que o pc tenha:</p>
+          <div class="form-check my-2 text-secondary">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="A" checked>
+              Gabinete RGB
+            </label>
+          </div>
+          <div class="form-check my-2 text-secondary">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="B">
+              Placa de vídeo
+            </label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">4. Qual o nome dado ao processador com video integrado?</p>
+          <div class="form-check my-2 text-secondary">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="A" checked>
+              GPU
+            </label>
+          </div>
+          <div class="form-check my-2 text-secondary">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="B">
+              APU
+            </label>
+          </div>
+          <div class="form-check my-2 text-secondary">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="C">
+              RGB
+            </label>
+          </div>
+        </div>
+        
+        <div class="text-center">
+          <button class="btn bg-primary text-light">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
