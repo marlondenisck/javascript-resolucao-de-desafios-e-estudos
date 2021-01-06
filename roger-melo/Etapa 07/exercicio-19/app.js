@@ -26,10 +26,39 @@ Ps: se você não conseguiu fazer tudo o que foi pedido acima, abra a issue mesm
 const form = document.querySelector('form')
 
 // 2 Array com as repostas
-const correctAnswers = ['C', 'A', 'B', 'B']
+const correctAnswers = ['C', 'A', 'B', 'D']
+
+// 3.4 criar um score
+let score = 0
+
+// 3.2 pegar valores dos inputs
+const getUsersAnswers = () => {
+  const userAnswers = [
+    form.inputQuestion1.value,
+    form.inputQuestion2.value,
+    form.inputQuestion3.value,
+    form.inputQuestion4.value,
+  ]
+  return userAnswers
+}
+
+const showFinalScore = () => {
+  scrollTo(0, 0)
+}
+
+// 3.5 calcular score
+const calculateUserScore = userAnswers => {
+  userAnswers.forEach((item, index) => {
+    // 3.5.1 verificar se o item atual esta presente no array de respostas corretas
+    if(item === correctAnswers[index]) {
+      // 3.5.2 Mostrar a pontuacao
+      score += 1
+    }
+  })
+}
 
 // 3.5 funcao para criar e mostrar um h2 com o resultado
-const renderScore = (score) => {
+const renderScore = score => {
   const h2 = document.querySelector('h2')
   const scoreTitle = document.createElement('h3')
   scoreTitle.setAttribute('class', 'bg-success text-light')
@@ -50,28 +79,15 @@ form.addEventListener('submit', event => {
   // 3.1 impedir carregamento da pagina
   event.preventDefault()
 
-  // 3.2 pegar valores dos inputs
-  // console.log(form.inputQuestion1.value)
-  const userAnswers = [
-    form.inputQuestion1.value,
-    form.inputQuestion2.value,
-    form.inputQuestion3.value,
-    form.inputQuestion4.value,
-  ]
-
-  // 3.4 criar um score
-  let score = 0
+  // 3.2 recebe um funcao invocada de valores dos inputs
+  const userAnswers = getUsersAnswers()
 
   // 3.5 Percorrer o array de respostas
-  userAnswers.forEach((item, index) => {
-    // 3.5.1 verificar se o item atual esta presente no array de respostas corretas
-    if(item === correctAnswers[index]) {
-      // 3.5.2 Mostrar a pontuacao
-      score += 1
-    }
-  })
+  calculateUserScore(userAnswers)
 
   // 3.5 Renderizar um h2 abaixo do titulo com a pontuacao
   renderScore(score)
   
+  // 3.6 scrolar para cima
+  showFinalScore()
 })
